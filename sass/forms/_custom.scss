@@ -1,0 +1,11 @@
+.search-form {
+    display: flex;
+
+    label {
+        display: flex;
+    }
+
+    .search-submit {
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,7 @@
+.site-content {
+    padding: 100px 30px;
+
+    @include media-min-width( lg ) {
+        padding: 100px 0;
+    }
+}

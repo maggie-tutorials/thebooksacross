@@ -1,0 +1,20 @@
+.site-footer {
+    padding: 50px 0;
+    background-color: $color__background-footer;
+
+    & .footer-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    & .widget-title {
+        color: $color__text-ins;
+        font-size: 1.4em;
+    }
+
+    & .menu {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+}

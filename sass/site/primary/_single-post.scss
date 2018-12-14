@@ -1,0 +1,8 @@
+.single-post {
+    & .entry-content-container {
+        & .post-thumbnail {
+            @include container-col(4);
+            margin-bottom: 40px;
+        }
+    }
+}

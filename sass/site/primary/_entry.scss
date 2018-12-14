@@ -1,0 +1,50 @@
+.entry-title {
+    @include font-size(2);
+    margin-top: 0;
+    
+    a {
+        color: $color__text-heading;
+
+        &:hover,
+        &:focus,
+        &:active {
+            color: $color__text-heading;
+            text-decoration: none;
+        }
+    }
+}
+
+.entry-meta {
+    display: flex;
+    text-transform: uppercase;
+}
+
+.entry-categories {
+    a {
+        color: $color__text-labels;
+        text-decoration: none;
+    }
+}
+
+.entry-date {
+    margin-left: 10px;
+
+    a {
+        color: $color__text-input;
+        text-decoration: none;
+    }
+}
+
+.entry-content-container {
+    & .post-thumbnail {
+        grid-column: span 4;
+    }
+}
+
+.entry-content {
+    margin: 0;
+
+    p {
+        margin-top: 0;
+    }
+}

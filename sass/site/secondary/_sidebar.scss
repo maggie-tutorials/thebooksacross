@@ -1,0 +1,9 @@
+.sidebar-bottom {
+    margin-bottom: 60px;
+
+    @include media-min-width( md ) {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+    }
+}

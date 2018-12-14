@@ -1,0 +1,43 @@
+{
+  "name": "the-books-across",
+  "version": "1.0.0",
+  "description": "Reading Book Theme",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "watch": "webpack --watch --mode development",
+    "build-wp": "webpack --mode production && gulp zip"
+  },
+  "keywords": [
+    "books",
+    "wordpress",
+    "theme",
+    "reviews"
+  ],
+  "author": "Maggie Serino",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.2.0",
+    "@babel/preset-env": "^7.2.0",
+    "@fortawesome/fontawesome-free": "^5.6.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.4",
+    "babel-preset-env": "^1.7.0",
+    "css-loader": "^1.0.1",
+    "file-loader": "^2.0.0",
+    "gulp": "^4.0.0",
+    "gulp-zip": "^4.2.0",
+    "mini-css-extract-plugin": "^0.4.5",
+    "node-sass": "^4.10.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "ttf-loader": "^1.0.2",
+    "uglifyjs-webpack-plugin": "^2.0.1",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.27.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
+  }
+}

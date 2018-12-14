@@ -1,0 +1,24 @@
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	border: 0;
+	border-radius: 3px;
+	background: $color__background-button;
+	color: $color__background-screen;
+	@include font-size(0.75);
+	line-height: 1;
+	padding: 15px 20px;
+	cursor: pointer;
+
+	&:hover {
+		border-color: $color__border-button-hover;
+		background-color: darken($color__background-button, 5%);
+	}
+
+	&:active,
+	&:focus {
+		border-color: $color__border-button-focus;
+		background-color: darken($color__background-button, 5%);
+	}
+}

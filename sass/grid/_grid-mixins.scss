@@ -1,0 +1,37 @@
+/* Mixins */
+@mixin grid-col($number) {
+  grid-template-columns: repeat($number, 1fr);
+}
+  
+@mixin span-col($number) {
+  grid-column: span $number;
+}
+  
+@mixin container-col($number) {
+  grid-column-start: $number;
+  grid-column-end: -#{$number};
+}
+  
+@mixin set-container($class) {
+  @for $i from 0 through $grid-columns {
+    .container-#{$class}-col-#{$i} {
+      @include container-col(#{$i});
+    }
+  }
+}
+  
+@mixin set-span($class) {
+  @for $i from 0 through $grid-columns {
+    .span-#{$class}-col-#{$i} {
+      @include span-col(#{$i});
+    }
+  }
+}
+  
+@mixin set-grid($class) {
+  @for $i from 0 through $grid-columns {
+    .grid-#{$class}-col-#{$i} {
+      @include grid-col(#{$i});
+    }
+  }
+}

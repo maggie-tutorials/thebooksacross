@@ -1,0 +1,57 @@
+@import "./grid-variables";
+@import './grid-mixins';
+
+/* Grid Setup */
+.grid {
+  display: grid;
+}
+
+@for $i from 0 through $grid-columns {
+  .grid-col-#{$i} {
+    @include grid-col(#{$i});
+  }
+
+  .span-col-#{$i} {
+    @include span-col(#{$i});
+  }
+
+  .container-col-#{$i} {
+    @include container-col(#{$i});
+  }
+}
+
+@for $i from 0 through $grid-gaps {
+  .grid-gap-#{$i} {
+    grid-column-gap: $i + px;
+  }
+}
+
+@media only screen and (min-width : $xs) {
+  @include set-container(xs);
+  @include set-span(xs);
+  @include set-grid(xs);
+}
+
+@media only screen and (min-width : $sm) {
+  @include set-container(sm);
+  @include set-span(sm);
+  @include set-grid(sm);
+}
+
+@media only screen and (min-width : $md) {
+  @include set-container(md);
+  @include set-span(md);
+  @include set-grid(md);
+}
+
+@media only screen and (min-width : $lg) {
+  @include set-container(lg);
+  @include set-span(lg);
+  @include set-grid(lg);
+}
+
+@media only screen and (min-width: $xl) {
+    @include set-container(xl);
+    @include set-span(xl);
+    @include set-grid(xl);
+}
