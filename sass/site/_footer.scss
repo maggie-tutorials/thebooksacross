@@ -1,6 +1,8 @@
 .site-footer {
-    padding: 50px 0;
-    background-color: $color__background-footer;
+    & .footer-info {
+        padding: 50px 0;
+        background-color: $color__background-footer;
+    }
 
     & .footer-container {
         display: flex;
@@ -10,6 +12,31 @@
     & .widget-title {
         color: $color__text-ins;
         font-size: 1.4em;
+    }
+
+    & .footer-bottom {
+        background-color: $color__background-body;
+        padding: 20px 0;
+    }
+
+    & .menu-disclaimers {
+        ul {
+            display: flex;
+        }
+
+        li {
+            margin-right: 15px;
+
+            a {
+                color: $color__text-input;
+
+                &:hover,
+                &:active,
+                &:focus {
+                    color: $color__text-input;
+                }
+            }
+        }
     }
 
     ul {

@@ -46,6 +46,7 @@ if ( ! function_exists( 'the_books_across_setup' ) ) :
 		register_nav_menus( array(
 			'menu-1' => esc_html__( 'Primary', 'the-books-across' ),
 			'footer-menu' => esc_html__( 'Footer Menu', 'the-books-across' ),
+			'footer-disclaimers' => esc_html__( 'Footer Disclaimers', 'the-books-across' ),
 		) );
 
 		/*

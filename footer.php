@@ -14,7 +14,7 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer grid grid-col-12">
-		<div class="site-info container-col-2">
+		<div class="footer-info span-col-12 grid grid-col-12">
 			<!-- <a href="<?php echo esc_url( __( 'https://wordpress.org/', 'the-books-across' ) ); ?>">
 				<?php
 				/* translators: %s: CMS name, i.e. WordPress. */
@@ -27,7 +27,7 @@
 				printf( esc_html__( 'Theme: %1$s by %2$s.', 'the-books-across' ), 'the-books-across', '<a href="http://underscores.me/">Underscores.me</a>' );
 				?> -->
 
-			<div id="footer-sidebar" class="footer-container">
+			<div id="footer-sidebar" class="footer-container container-col-2">
 				<div id="footer-menu" class="footer-sidebar-section">
 					<h3 class="widget-title">The Books Across</h3>
 					<?php
@@ -52,7 +52,24 @@
 					?>
 				</div>
 			</div>
-		</div><!-- .site-info -->
+		</div><!-- .footer-info -->
+		<div class="footer-bottom span-col-12 grid grid-col-12">
+			<div class="footer-container container-col-3">
+				<div class="menu-disclaimers">
+					<?php
+						wp_nav_menu( array(
+							'theme_location' => 'footer-disclaimers',
+							'menu_id'        => 'footer-disclaimers',
+						) );
+					?>
+				</div>
+				<div class="copyright">
+					<?php
+					printf( esc_html__( 'Copyright %1$s by %2$s.', 'the-books-across' ), date( 'Y' ), get_the_author_link() );
+					?>
+				</div>
+			</div>
+		</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
