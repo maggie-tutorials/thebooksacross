@@ -4,6 +4,10 @@
 	width: $size__site-main;
 }
 
+.content-single {
+	max-width: 920px;
+}
+
 .site-main {
 	margin: 0 $size__site-sidebar 0 0;
 }

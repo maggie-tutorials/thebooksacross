@@ -1,6 +1,10 @@
 .entry-title {
-    @include font-size(2);
+    @include font-size(2.5);
     margin-top: 0;
+
+    @include media-min-width( sm ) {
+        @include font-size(3.5);
+    }
     
     a {
         color: $color__text-heading;
@@ -14,9 +18,11 @@
     }
 }
 
-.entry-meta {
-    display: flex;
-    text-transform: uppercase;
+@include media-min-width( sm ) {
+    .entry-meta {
+        display: flex;
+        text-transform: uppercase;
+    }
 }
 
 .entry-categories {
@@ -27,7 +33,9 @@
 }
 
 .entry-date {
-    margin-left: 10px;
+    @include media-min-width( sm ) { 
+        margin-left: 10px;
+    }
 
     a {
         color: $color__text-input;
@@ -46,5 +54,29 @@
 
     p {
         margin-top: 0;
+    }
+}
+
+.content-single {
+    @include media-min-width( sm ) {
+        & .entry-header {
+            text-align: center;
+        }
+
+        & .entry-meta {
+            justify-content: center;
+        }
+    }
+
+    & .entry-title {
+        @include font-size(3);
+
+        @include media-min-width( sm ) {
+            @include font-size(4);
+        }
+
+        @include media-min-width( lg ) {
+            @include font-size(5);
+        }
     }
 }

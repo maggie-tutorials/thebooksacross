@@ -13,8 +13,8 @@
 
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer grid grid-col-12">
-		<div class="footer-info span-col-12 grid grid-col-12">
+	<footer id="colophon" class="site-footer">
+		<div class="footer-info">
 			<!-- <a href="<?php echo esc_url( __( 'https://wordpress.org/', 'the-books-across' ) ); ?>">
 				<?php
 				/* translators: %s: CMS name, i.e. WordPress. */
@@ -27,46 +27,50 @@
 				printf( esc_html__( 'Theme: %1$s by %2$s.', 'the-books-across' ), 'the-books-across', '<a href="http://underscores.me/">Underscores.me</a>' );
 				?> -->
 
-			<div id="footer-sidebar" class="footer-container container-col-2">
-				<div id="footer-menu" class="footer-sidebar-section">
-					<h3 class="widget-title">The Books Across</h3>
-					<?php
-						wp_nav_menu( array(
-							'theme_location' => 'footer-menu',
-							'menu_id'        => 'footer-menu',
-						) );
-					?>
-				</div>
-				<div id="footer-sidebar1" class="footer-sidebar-section">
-					<?php
-						if(is_active_sidebar('footer-sidebar-1')){
-							dynamic_sidebar('footer-sidebar-1');
-						}
-					?>
-				</div>
-				<div id="footer-sidebar2" class="footer-sidebar-section">
-					<?php
-						if(is_active_sidebar('footer-sidebar-2')){
-							dynamic_sidebar('footer-sidebar-2');
-						}
-					?>
+			<div id="footer-sidebar" class="footer-container container">
+				<div class="row">
+					<div id="footer-menu" class="footer-sidebar-section col-12 col-md-4">
+						<h3 class="widget-title">The Books Across</h3>
+						<?php
+							wp_nav_menu( array(
+								'theme_location' => 'footer-menu',
+								'menu_id'        => 'footer-menu',
+							) );
+						?>
+					</div>
+					<div id="footer-sidebar1" class="footer-sidebar-section col-12 col-md-4">
+						<?php
+							if(is_active_sidebar('footer-sidebar-1')){
+								dynamic_sidebar('footer-sidebar-1');
+							}
+						?>
+					</div>
+					<div id="footer-sidebar2" class="footer-sidebar-section col-12 col-md-4">
+						<?php
+							if(is_active_sidebar('footer-sidebar-2')){
+								dynamic_sidebar('footer-sidebar-2');
+							}
+						?>
+					</div>
 				</div>
 			</div>
 		</div><!-- .footer-info -->
-		<div class="footer-bottom span-col-12 grid grid-col-12">
-			<div class="footer-container container-col-3">
-				<div class="menu-disclaimers">
-					<?php
-						wp_nav_menu( array(
-							'theme_location' => 'footer-disclaimers',
-							'menu_id'        => 'footer-disclaimers',
-						) );
-					?>
-				</div>
-				<div class="copyright">
-					<?php
-					printf( esc_html__( 'Copyright %1$s by %2$s.', 'the-books-across' ), date( 'Y' ), get_the_author_link() );
-					?>
+		<div class="footer-bottom">
+			<div class="footer-container container">
+				<div class="row">
+					<div class="menu-disclaimers col-xs-6">
+						<?php
+							wp_nav_menu( array(
+								'theme_location' => 'footer-disclaimers',
+								'menu_id'        => 'footer-disclaimers',
+							) );
+						?>
+					</div>
+					<div class="copyright col-xs-6">
+						<?php
+						printf( esc_html__( 'Copyright %1$s by %2$s.', 'the-books-across' ), date( 'Y' ), get_the_author_link() );
+						?>
+					</div>
 				</div>
 			</div>
 		</div>

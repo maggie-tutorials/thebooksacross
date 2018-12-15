@@ -25,7 +25,7 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'the-books-across' ); ?></a>
 
 	<header id="masthead" class="site-header">
-		<div class="site-header__logo">
+		<div class="site-logo">
 			<?php the_custom_logo(); ?>
 		</div><!-- .site-branding -->
 
@@ -42,4 +42,4 @@
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 
-	<div id="content" class="site-content grid grid-col-12 grid-gap-30">
+	<div id="content" class="site-content container">

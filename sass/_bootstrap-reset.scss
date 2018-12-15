@@ -1,0 +1,9 @@
+.row {
+	margin: 0 !important;
+	width: 100%;
+}
+
+[class*="col-"] {
+	padding-left: 0;
+	padding-right: 0;
+}

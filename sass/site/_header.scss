@@ -1,8 +1,9 @@
 .site-header {
-    &__logo {
-        padding: 30px 0;
+    & .site-logo {
+        padding: 30px;
         display: flex;
         justify-content: center;
+        align-items: center;
     }
 
     & .custom-logo-link {
@@ -11,6 +12,9 @@
 
     & .custom-logo {
         width: auto;
-        height: 100%;
+        max-height: 150px;
+        top: 50%;
+        transform: translateY(-50%);
+        position: relative;
     }
 }

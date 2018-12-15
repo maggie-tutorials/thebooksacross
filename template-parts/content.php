@@ -33,12 +33,14 @@
 		endif; ?>
 	</header><!-- .entry-header -->
 
-	<div class="entry-content-container grid grid-col-12 grid-gap-20">
+	<div class="entry-content-container row">
 		<?php if ( has_post_thumbnail() ) : ?>
-			<?php the_books_across_post_thumbnail(); ?>
+			<div class="col-12 col-md-4">
+				<?php the_books_across_post_thumbnail(); ?>
+			</div>
 		<?php endif; ?>
 
-		<div class="entry-content span-col-8">
+		<div class="entry-content col-12 col-md-8">
 			<?php
 			the_excerpt(sprintf(
 				wp_kses(

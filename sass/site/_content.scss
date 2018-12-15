@@ -1,7 +1,12 @@
 .site-content {
-    padding: 100px 30px;
+    padding: 50px 30px;
 
     @include media-min-width( lg ) {
-        padding: 100px 0;
+        padding: 70px 0;
     }
+}
+
+.content-single {
+    max-width: 920px;
+    margin: 0 auto;
 }
