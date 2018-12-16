@@ -52,7 +52,7 @@
             margin-bottom: 30px;
 
             @include media-min-width( md ) {
-                max-width: 400px;
+                max-width: 100%;
                 margin-bottom: 0;
                 padding-right: 30px;
             }
@@ -62,7 +62,7 @@
 
 .entry-content {
     margin: 0;
-    padding: 0 30px;
+    padding-right: 30px;
 
     p {
         margin-top: 0;
@@ -78,6 +78,10 @@
         & .entry-meta {
             justify-content: center;
         }
+    }
+
+    & .entry-content {
+        padding: 0;
     }
 
     & .entry-title {
