@@ -45,7 +45,18 @@
 
 .entry-content-container {
     & .post-thumbnail {
-        grid-column: span 4;
+        text-align: center;
+        
+        img {
+            max-width: 200px;
+            margin-bottom: 30px;
+
+            @include media-min-width( md ) {
+                max-width: 400px;
+                margin-bottom: 0;
+                padding-right: 30px;
+            }
+        }
     }
 }
 
