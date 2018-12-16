@@ -6,4 +6,16 @@
         justify-content: space-between;
         align-items: start;
     }
+
+    section {
+        width: 100%;
+
+        @include media-min-width( md ) {
+            width: 40%;
+
+            &:nth-of-type(2) {
+                width: 30%;
+            }
+        }
+    }
 }
