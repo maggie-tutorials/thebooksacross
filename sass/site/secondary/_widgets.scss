@@ -46,6 +46,16 @@
 	}
 }
 
+.widget_currently_reading {
+	a {
+		display: inline-block;
+	}
+	
+	img {
+		max-width: 300px;
+	}
+}
+
 aside .widget_mc4wp_form_widget {
 	background-color: $color__background-ins;
 	padding: 20px;
