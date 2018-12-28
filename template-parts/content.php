@@ -19,6 +19,9 @@
 				<div class="entry-date">
 					<?php the_books_across_posted_on(); ?>
 				</div>
+				<div class="entry-comments">
+					<?php comments_number( '0 comments', 'one comment', '% comments' ); ?>
+				</div>
 				<!-- <div class="entry-author">
 					<?php the_books_across_posted_by();?>
 				</div> -->

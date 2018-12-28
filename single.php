@@ -10,7 +10,7 @@
 get_header();
 ?>
 
-	<div id="primary" class="content-area content-single">
+	<div id="primary" class="content-area col-12 col-md-9">
 		<main id="main" class="single-post">
 		<?php
 		while ( have_posts() ) :
@@ -26,8 +26,6 @@ get_header();
 
 			?>
 
-			<?php get_sidebar( 'bottom' ); ?>
-
 			<?php
 
 			// If comments are open or we have at least one comment, load up the comment template.
@@ -42,4 +40,5 @@ get_header();
 	</div><!-- #primary -->
 
 <?php
+get_sidebar();
 get_footer();

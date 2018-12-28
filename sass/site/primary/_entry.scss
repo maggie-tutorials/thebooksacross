@@ -32,14 +32,14 @@
     }
 }
 
-.entry-date {
+.entry-date,
+.entry-comments {
     @include media-min-width( sm ) { 
         margin-left: 10px;
     }
 
     a {
         color: $color__text-input;
-        text-decoration: none;
     }
 }
 
