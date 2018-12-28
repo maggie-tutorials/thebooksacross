@@ -2,6 +2,12 @@
     & .entry-content-container {
         & .post-thumbnail {
             margin-bottom: 40px;
+
+            img {
+                @include media-min-width( md ) {
+                    max-width: 70%;
+                }
+            }
         }
     }
 }
