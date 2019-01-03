@@ -40,22 +40,29 @@ get_header();
 				 */
 				get_template_part( 'template-parts/content', get_post_type() );
 
-			endwhile;
+			endwhile; ?>
+		</main>
+		<div class="pagination-container">
+			<?php
 
 			the_posts_pagination( array(
 				'mid_size' => 2,
 				'prev_text' => __( '« Previous', 'the-books-across' ),
 				'next_text' => __( 'Next »', 'the-books-across' ),
 			) );
+			?>
+		</div>
+		<?php
 
 		else :
 
 			get_template_part( 'template-parts/content', 'none' );
-
-		endif;
+		?>
+		</main><!-- #main -->
+		<?php
+			endif;
 		?>
 
-		</main><!-- #main -->
 	</div><!-- #primary -->
 
 <?php

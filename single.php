@@ -10,7 +10,7 @@
 get_header();
 ?>
 
-	<div id="primary" class="content-area col-12 col-md-9">
+	<div id="primary" class="content-area content-single col-12 col-md-9">
 		<main id="main" class="single-post">
 		<?php
 		while ( have_posts() ) :

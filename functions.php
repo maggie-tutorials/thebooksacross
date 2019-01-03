@@ -174,6 +174,11 @@ function the_books_across_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'the_books_across_scripts' );
 
+function custom_excerpt_length( $length ) {
+	return 20;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
 /**
  * Implement the Custom Header feature.
  */
