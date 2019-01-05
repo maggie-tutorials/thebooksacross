@@ -20,7 +20,7 @@
 	<script>
 	  (adsbygoogle = window.adsbygoogle || []).push({
 		google_ad_client: "ca-pub-6436940501206651",
-		enable_page_level_ads: true
+		enable_page_level_ads: false
 	  });
 	</script>
 	<?php wp_head(); ?>
