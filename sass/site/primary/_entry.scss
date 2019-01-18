@@ -98,6 +98,15 @@
 
     & .entry-content {
         padding: 0;
+        @include font-size(1.75);
+
+        @include media-min-width( lg ) {
+            @include font-size(2);
+        }
+
+        strong {
+            color: darken($color__text-input, 20%);
+        }
     }
 
     & .entry-title {
@@ -120,6 +129,43 @@
     & .entry-comments {
         @include media-min-width( sm ) { 
             margin-left: 10px;
+        }
+    }
+    
+
+    h2 {
+        @include font-size(3);
+
+        @include media-min-width( sm ) {
+            @include font-size(3.5);
+        }
+
+        @include media-min-width( lg ) {
+            @include font-size(4.5);
+        }
+    }
+
+    h3 {
+        @include font-size(2.5);
+
+        @include media-min-width( sm ) {
+            @include font-size(3);
+        }
+
+        @include media-min-width( lg ) {
+            @include font-size(3.5);
+        }
+    }
+
+    h4 {
+        @include font-size(2);
+
+        @include media-min-width( sm ) {
+            @include font-size(2.5);
+        }
+
+        @include media-min-width( lg ) {
+            @include font-size(3);
         }
     }
 }
