@@ -17,6 +17,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<?php wp_head(); ?>
+	
+	<!-- Google Ads Scripts -->
+	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<script>
+		 (adsbygoogle = window.adsbygoogle || []).push({
+			  google_ad_client: "ca-pub-6436940501206651",
+			  enable_page_level_ads: true
+		 });
+	</script>
+	<!-- End Google Ads Scripts -->
 </head>
 
 <body <?php body_class(); ?>>

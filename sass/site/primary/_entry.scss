@@ -98,10 +98,10 @@
 
     & .entry-content {
         padding: 0;
-        @include font-size(1.75);
+        @include font-size(1.2);
 
         @include media-min-width( lg ) {
-            @include font-size(2);
+            @include font-size(1.6);
         }
 
         strong {

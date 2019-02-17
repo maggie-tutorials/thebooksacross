@@ -15,18 +15,6 @@
 
 	<footer id="colophon" class="site-footer">
 		<div class="footer-info">
-			<!-- <a href="<?php echo esc_url( __( 'https://wordpress.org/', 'the-books-across' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'the-books-across' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'the-books-across' ), 'the-books-across', '<a href="http://underscores.me/">Underscores.me</a>' );
-				?> -->
-
 			<div id="footer-sidebar" class="footer-container container">
 				<div class="row">
 					<div id="footer-menu" class="footer-sidebar-section col-12 col-md-4">
@@ -77,9 +65,15 @@
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
+<!-- Mailchimp Subscribe Popup -->
 <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us7.list-manage.com","uuid":"56f4d6bcd0cf35075f85e411e","lid":"5c5c5c38f7","uniqueMethods":true}) })</script>
+<!-- End Mailchimp Subscribe Popup -->
 
 <?php wp_footer(); ?>
+
+<!-- Amazon Associates Script -->
+<div id="amzn-assoc-ad-4317fdb6-19b8-4c6f-a5f4-4ceafe8c9330"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=4317fdb6-19b8-4c6f-a5f4-4ceafe8c9330"></script>
+<!-- End Amazon Associates Script -->
 
 </body>
 </html>
