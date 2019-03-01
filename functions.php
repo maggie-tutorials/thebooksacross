@@ -153,7 +153,7 @@ add_action( 'widgets_init', 'the_books_across_widgets_init' );
  */
 function the_books_across_scripts() {
 	add_filter( 'excerpt_length', function( $length ) {
-		return 60;
+		return 50;
 	} );
 
 	wp_enqueue_style( 'the-books-across-style', get_stylesheet_uri() );
@@ -173,11 +173,6 @@ function the_books_across_scripts() {
 	wp_enqueue_script( 'site_main_js', get_template_directory_uri() . '/js/build/app.js' , null , null , true );
 }
 add_action( 'wp_enqueue_scripts', 'the_books_across_scripts' );
-
-function custom_excerpt_length( $length ) {
-	return 20;
-}
-add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
 /**
  * Implement the Custom Header feature.

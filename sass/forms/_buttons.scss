@@ -1,24 +1,61 @@
 button,
 input[type="button"],
 input[type="reset"],
-input[type="submit"] {
+input[type="submit"],
+.button {
 	border: 0;
 	border-radius: 3px;
 	background: $color__background-button;
 	color: $color__background-screen;
-	@include font-size(1.25);
+	@include font-size(1.5);
 	line-height: 1;
 	padding: 15px 20px;
 	cursor: pointer;
+	text-transform: uppercase;
+	text-decoration: none;
+
+	&:visited {
+		background: $color__background-button;
+		color: $color__background-screen;
+	}
 
 	&:hover {
 		border-color: $color__border-button-hover;
 		background-color: darken($color__background-button, 5%);
+		color: $color__background-screen;
 	}
 
 	&:active,
 	&:focus {
 		border-color: $color__border-button-focus;
 		background-color: darken($color__background-button, 5%);
+		color: $color__background-screen;
+	}
+}
+
+.button {
+	border: 0;
+	border-radius: 3px;
+	background: $color__background-button;
+	color: $color__background-screen;
+	@include font-size(1.5);
+	line-height: 1;
+	padding: 15px 20px;
+	cursor: pointer;
+	text-transform: uppercase;
+	text-decoration: none;
+
+	&--blue {
+		background: $color__background-button-secondary;
+
+		&:visited {
+			background: $color__background-button-secondary;
+		}
+
+		&:hover,
+		&:active,
+		&:focus {
+			background-color: darken($color__background-button-secondary, 5%);
+		}
 	}
 }

@@ -5,6 +5,7 @@
     justify-content: center;
 
     a {
+        font-weight: 400;
         color: $color__text-ins;
         text-transform: uppercase;
     }
@@ -43,6 +44,7 @@
             @media screen and (max-width: 37.5em) {
                 position: relative;
                 left: auto;
+                top: 0;
                 padding: 0;
                 box-shadow: none;
                 border: 0;
@@ -63,6 +65,7 @@
 .posts-navigation,
 .post-navigation {
     a {
+        font-weight: 400;
         color: $color__link-secondary;
         text-decoration: underline;
 
@@ -78,18 +81,31 @@
     text-align: center;
     
     a {
+        font-weight: 400;
         color: $color__link-secondary;
         text-decoration: underline;
+
+        &:hover {
+            text-decoration: none;
+        }
     }
 
     .page-numbers:not(.prev):not(.next) {
         border: 1px solid $color__link-secondary;
         padding: 10px;
 
+        &:hover {
+            background-color: lighten($color__link-secondary, 25%);
+        }
+
         &.current {
             background-color: $color__link-secondary;
             border: 0;
             color: white;
+
+            &:hover {
+                background-color: $color__link-secondary;
+            }
         }
     }
 
